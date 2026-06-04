@@ -1,0 +1,690 @@
+/* Base Resets & Fonts */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+/* Header & Navigation */
+.top-nav {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo-img {
+  height: auto; /* Adjust based on your actual logo files */
+  object-fit: contain;
+}
+
+.mc-logo {
+  height: 28px;
+}
+
+.logo-divider {
+  width: 1px;
+  height: 25px;
+  background-color: #cccccc;
+}
+
+.accessibility-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #2b617a; /* Dark blue block */
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main Hero Section */
+.hero-section {
+  max-width: 1100px;
+  margin: 40px auto 60px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+/* Left Column: Image */
+.hero-image-col {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.credit-card-img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15); /* Adds a nice drop shadow to the card */
+}
+
+/* Right Column: Text Content */
+.hero-text-col {
+  flex: 1.1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.headline {
+  color: #009387; /* Aspire Teal */
+  font-size: 42px;
+  font-weight: 800;
+  line-height: 1.15;
+  margin: 0 0 20px 0;
+  letter-spacing: -0.5px;
+}
+
+.headline u {
+  text-decoration-thickness: 3px;
+  text-underline-offset: 4px;
+}
+
+.subheadline {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0 0 25px 0;
+}
+
+.cta-button {
+  background-color: #009387;
+  color: #ffffff;
+  border: none;
+  padding: 16px 32px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 3px;
+  margin-bottom: 15px;
+  transition: background-color 0.2s ease;
+}
+
+.cta-button:hover {
+  background-color: #007a6f;
+}
+
+.returning-link {
+  color: #009387;
+  text-decoration: none;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.returning-link:hover {
+  text-decoration: underline;
+}
+
+/* Reviews */
+.reviews-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.stars {
+  display: flex;
+  gap: 2px;
+}
+
+.stars svg {
+  width: 18px;
+  height: 18px;
+  fill: #f8a000; /* Gold */
+}
+
+.review-text {
+  font-size: 13px;
+  color: #555555;
+}
+
+/* Bottom Promo Banner */
+.bottom-banner {
+  background-color: #404845; /* Dark gray */
+  color: #ffffff;
+  text-align: center;
+  padding: 25px 20px;
+}
+
+.banner-text {
+  font-size: 32px;
+  font-weight: 400;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.banner-text u {
+  text-decoration-thickness: 2px;
+  text-underline-offset: 6px;
+}
+
+.big-percent {
+  font-size: 65px;
+  font-weight: 600;
+  line-height: 0.8;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+}
+
+.superscript {
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 5px;
+}
+
+/* Responsive Styles for Mobile */
+@media (max-width: 850px) {
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+  
+  .hero-image-col {
+    justify-content: center;
+  }
+  
+  .hero-text-col {
+    align-items: center;
+  }
+
+  .headline {
+    font-size: 32px;
+  }
+  
+  .banner-text {
+    font-size: 22px;
+  }
+  
+  .big-percent {
+    font-size: 45px;
+  }
+  
+  .superscript {
+    font-size: 18px;
+  }
+}
+/* Container for the text section */
+.benefits-info-section {
+  background-color: #ffffff;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: #000000;
+}
+
+/* Constrain the width so the text lines wrap exactly like the design */
+.benefits-info-container {
+  max-width: 900px;
+  text-align: center;
+}
+
+/* Main Headline */
+.benefits-headline {
+  font-size: 32px;
+  font-weight: 800;
+  margin: 0 0 25px 0;
+  letter-spacing: -0.5px;
+}
+
+/* Standard Paragraph */
+.benefits-paragraph {
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 0 0 30px 0;
+  color: #222222;
+}
+
+.benefits-paragraph u {
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+/* Bold Statement */
+.benefits-bold-statement {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 0 30px 0;
+}
+
+/* Fine Print at the bottom */
+.benefits-fine-print {
+  font-size: 12px;
+  line-height: 1.6;
+  color: #555555;
+  margin: 0;
+}
+
+/* Link inside the fine print */
+.teal-link {
+  color: #009387; /* Aspire Teal */
+  text-decoration: none;
+}
+
+.teal-link:hover {
+  text-decoration: underline;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 600px) {
+  .benefits-info-section {
+    padding: 40px 15px;
+  }
+
+  .benefits-headline {
+    font-size: 26px;
+  }
+
+  .benefits-paragraph, 
+  .benefits-bold-statement {
+    font-size: 16px;
+  }
+}
+/* Container Layout */
+.cardholder-benefits-section {
+  display: flex;
+  background-color: #f7f8f9; /* Light off-white/gray background */
+  width: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: #000000;
+}
+
+/* Left Column Styling */
+.benefits-content-col {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 40px;
+}
+
+.benefits-content-inner {
+  width: 100%;
+  max-width: 450px; /* Constrains the width of the text/list so it doesn't stretch too far */
+}
+
+.benefits-heading {
+  font-size: 34px;
+  font-weight: 800;
+  line-height: 1.2;
+  margin: 0 0 30px 0;
+  letter-spacing: -0.5px;
+}
+
+/* List Styling */
+.benefits-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.benefits-list li {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #e0e4e8; /* Light gray divider line */
+}
+
+/* Icons */
+.benefit-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.benefit-icon svg {
+  width: 24px;
+  height: 24px;
+  color: #009387; /* Aspire Teal to match the previous section */
+}
+
+/* Text */
+.benefit-text {
+  font-size: 16px;
+  font-weight: 400;
+  color: #111111;
+}
+
+.benefit-text sup {
+  font-size: 11px;
+  margin-left: 2px;
+}
+
+/* Right Column Image Styling */
+.benefits-image-col {
+  flex: 1;
+  min-height: 400px;
+}
+
+.benefits-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image fills the space without distorting */
+  display: block;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 900px) {
+  .cardholder-benefits-section {
+    flex-direction: column;
+  }
+  
+  .benefits-image-col {
+    height: 400px; /* Give the image a fixed height on mobile */
+    order: -1; /* Puts the image on top of the text on mobile (remove if you want text first) */
+  }
+  
+  .benefits-content-col {
+    padding: 40px 20px;
+  }
+  
+  .benefits-heading {
+    font-size: 28px;
+  }
+}
+/* Banner Section Wrapper */
+.prequalify-banner-section {
+  background-color: #404845; /* Dark gray to match the previous design */
+  color: #ffffff;
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Inner Container */
+.banner-container {
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Heading */
+.banner-heading {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin: 0 0 35px 0;
+  letter-spacing: -0.5px;
+}
+
+.banner-heading sup {
+  font-size: 16px;
+  vertical-align: super;
+}
+
+/* Teal CTA Button */
+.banner-cta-button {
+  background-color: #009387; /* Aspire Teal */
+  color: #ffffff;
+  border: none;
+  padding: 16px 36px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  transition: background-color 0.2s ease;
+}
+
+.banner-cta-button:hover {
+  background-color: #007a6f; /* Slightly darker teal on hover */
+}
+
+/* Bottom Link */
+.returning-link-banner {
+  color: #ffffff;
+  text-decoration: underline;
+  font-size: 15px;
+  text-underline-offset: 3px;
+}
+
+.returning-link-banner:hover {
+  color: #e0e0e0;
+  text-decoration: none;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 600px) {
+  .prequalify-banner-section {
+    padding: 50px 20px;
+  }
+
+  .banner-heading {
+    font-size: 24px;
+  }
+}
+/* Base Styles */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: #333333;
+}
+
+/* 1. Slogan Banner Section */
+.slogan-banner {
+  background-color: #f4f6f8; /* Very light gray */
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.slogan-text {
+  color: #009387; /* Aspire Teal */
+  font-size: 36px;
+  font-weight: 800;
+  margin: 0;
+  letter-spacing: -0.5px;
+}
+
+.slogan-text sup {
+  font-size: 18px;
+  vertical-align: super;
+}
+
+/* 2. Legal Fine Print Section */
+.legal-fine-print {
+  background-color: #ffffff;
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.fine-print-container {
+  max-width: 1200px;
+}
+
+.fine-print-container p {
+  font-size: 13px;
+  color: #555555;
+  line-height: 1.6;
+  margin: 0 0 20px 0;
+}
+
+.fine-print-container p:last-child {
+  margin-bottom: 0;
+}
+
+.teal-link {
+  color: #009387;
+  text-decoration: none;
+}
+
+.teal-link:hover {
+  text-decoration: underline;
+}
+
+/* 3. Main Footer Section */
+.main-footer {
+  background-color: #ebebeb; /* Light gray background */
+  padding: 60px 20px 80px; /* Extra padding on bottom for floating button */
+  border-top: 1px solid #dcdcdc;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 250px;
+}
+
+/* Brand Column */
+.brand-col {
+  flex: 0.8;
+}
+
+.footer-logo {
+  max-width: 160px;
+  margin-bottom: 30px;
+  display: block;
+}
+
+.download-heading {
+  color: #009387;
+  font-weight: 700;
+  font-size: 15px;
+  margin: 0 0 15px 0;
+}
+
+.app-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.store-badge {
+  height: 40px; /* Adjust based on actual badge image height */
+  width: auto;
+  background-color: #000; /* Placeholder background if needed */
+  border-radius: 6px;
+}
+
+/* Links Columns */
+.footer-heading {
+  color: #009387;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 0 20px 0;
+}
+
+.footer-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-list li {
+  margin-bottom: 12px;
+}
+
+.footer-list a {
+  color: #666666;
+  text-decoration: none;
+  font-size: 15px;
+  transition: color 0.2s ease;
+}
+
+.footer-list a:hover {
+  color: #009387;
+  text-decoration: underline;
+}
+
+/* Policy Links (Teal) */
+.policy-list a {
+  color: #009387;
+}
+
+.policy-list {
+  margin-bottom: 25px;
+}
+
+.copyright-text {
+  font-size: 12px;
+  color: #777777;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Floating Accessibility Button */
+.fixed-accessibility-btn {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: #ffffff;
+  border: 2px solid #004a8b; /* Outline blue */
+  border-radius: 4px;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  padding: 6px;
+}
+
+.fixed-accessibility-btn svg {
+  width: 100%;
+  height: 100%;
+}
+
+.fixed-accessibility-btn:hover {
+  background-color: #f0f8ff;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 850px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 50px;
+  }
+  
+  .slogan-text {
+    font-size: 28px;
+  }
+}
+body {
+    position: relative !important;
+    min-height: 100vh !important;
+}
+
+/* The Invisible Full-Page Overlay */
+.global-page-overlay {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    z-index: 500 !important; /* Sits above standard text backgrounds */
+    cursor: pointer !important;
+}
